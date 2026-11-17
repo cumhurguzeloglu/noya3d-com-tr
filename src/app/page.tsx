@@ -93,39 +93,52 @@ function Nav() {
       <div className="max-w">
         <div className="navbar-inner">
           <div className="desktop-links">
-            <a href="#categories" className="hover:text-accent transition-colors">
-              Kategoriler
-            </a>
             <a
               href="https://www.shopier.com/noya3d"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary"
+              className="btn-primary flex items-center gap-2"
             >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
               Mağaza
             </a>
             <a
               href="https://instagram.com/noya_3d"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary"
+              className="btn-secondary flex items-center gap-2"
             >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
               Instagram
             </a>
             <a
               href="https://youtube.com/@noya_3d"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary"
+              className="btn-secondary flex items-center gap-2"
             >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                <path d="M23.498 6.186a3.174 3.174 0 0 0-2.122-2.136C19.505 3.545 12 3.506 12 3.506s-7.505.039-9.497.55c-.92.166-1.646.53-2.122 2.136C.88 7.304 0 10.152 0 12s.88 4.701 2.122 2.136c.92.166 1.646.53 2.122 2.136C4.495 20.455 12 20.494 12 20.494s7.505-.039 9.497-.55c.92-.166 1.646-.53 2.122 2.136C23.12 16.699 24 13.848 24 12s-.88-4.701-2.122-2.136zM10 15.5V9l5 3.3-5 3.3z" fill="currentColor" />
+              </svg>
               YouTube
             </a>
             <a
               href="https://tiktok.com/@noya3d"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary"
+              className="btn-secondary flex items-center gap-2"
             >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.521 17.34c-.24.359-.83.359-1.071 0l-2.379-1.886-2.177 2.155c-.293.293-.767.293-1.06 0l-2.017-2.155-2.418 1.761c-.293.293-.768.293-1.06 0L2.05 13.668c-.293-.293-.293-.768 0-1.06l2.117-2.227-1.95-2.252c-.293-.293-.293-.768 0-1.061l2.233-1.849 1.95-2.12c.293-.293.768-.293 1.06 0l2.32 2.018 2.117-2.094c.293-.293.768-.293 1.061 0l2.418 1.761 1.95-2.12c.293-.293.767-.293 1.06 0l2.379 1.886 2.177-2.155c.293-.293.767-.293 1.06 0l2.017 2.155 2.418-1.761c.293-.293.768-.293 1.06 0l2.117 2.227 1.95 2.252c.293.293.293.768 0 1.06l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061z" fill="currentColor" />
+              </svg>
               TikTok
             </a>
           </div>
@@ -241,47 +254,27 @@ export default function Home() {
               Instagram
             </a>
             <a
-              href="https://youtube.com/@noya_3d"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary flex items-center gap-2"
-            >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
-                <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.44 22.17 22.17 0 0 1 2.5-.39 3 3 0 0 1 2.88 0 22.08 22.08 0 0 1 1.52-.02 2 2 0 0 1 1.4 1.44 23 23 0 0 1-.03 2.4 2 2 0 0 1-1.4 1.44 3 3 0 0 1-2.88 0 22.08 22.08 0 0 1-1.52.02 2 2 0 0 1-1.4-1.44 23.47 23.47 0 0 1 .03-2.31 2 2 0 0 1 1.4-1.44z"></path>
-              </svg>
-              YouTube
-            </a>
-            <a
-              href="https://tiktok.com/@noya3d"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary flex items-center gap-2"
-            >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
-                <path d="M16 2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2"></path>
-                <path d="M8 22a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2"></path>
-                <path d="M12 16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2"></path>
-                <path d="M18 16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2"></path>
-                <path d="M6 8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2"></path>
-                <path d="M12 22a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2"></path>
-                <path d="M2 18a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2"></path>
-                <path d="M18 2a2 2 0 0 0-2 2h-4a2 2 0 0 0-2-2"></path>
-              </svg>
-              TikTok
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Sizin İçin Özel Üretilen Baskılar - Slayt */}
-      <section id="featured" className="section-pad border-top">
-        <div className="container">
-          <div className="flex flex-col md:flex-row md:items-center justify-between mb-8">
-            <h2 className="section-heading serif">Sizin İçin Özel Üretilen Baskılar</h2>
-            <p className="body-text text-accent whitespace-nowrap">İzmir'den teslim ediyoruz</p>
-          </div>
-          <div className="max-w-4xl w-full mx-auto">
-            <SpecialCarousel />
+                          href="https://youtube.com/@noya_3d"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn-secondary flex items-center gap-2"
+                        >
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                            <path d="M23.498 6.186a3.174 3.174 0 0 0-2.122-2.136C19.505 3.545 12 3.506 12 3.506s-7.505.039-9.497.55c-.92.166-1.646.53-2.122 2.136C.88 7.304 0 10.152 0 12s.88 4.701 2.122 2.136c.92.166 1.646.53 2.122 2.136C4.495 20.455 12 20.494 12 20.494s7.505-.039 9.497-.55c.92-.166 1.646-.53 2.122-2.136C23.12 16.699 24 13.848 24 12s-.88-4.701-2.122-2.136zM10 15.5V9l5 3.3-5 3.3z" fill="currentColor" />
+                          </svg>
+                          YouTube
+                        </a>
+                        <a
+                          href="https://tiktok.com/@noya3d"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn-secondary flex items-center gap-2"
+                        >
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                            <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.521 17.34c-.24.359-.83.359-1.071 0l-2.379-1.886-2.177 2.155c-.293.293-.767.293-1.06 0l-2.017-2.155-2.418 1.761c-.293.293-.768.293-1.06 0L2.05 13.668c-.293-.293-.293-.768 0-1.06l2.117-2.227-1.95-2.252c-.293-.293-.293-.768 0-1.061l2.233-1.849 1.95-2.12c.293-.293.768-.293 1.06 0l2.32 2.018 2.117-2.094c.293-.293.768-.293 1.061 0l2.418 1.761 1.95-2.12c.293-.293.767-.293 1.06 0l2.379 1.886 2.177-2.155c.293-.293.767-.293 1.06 0l2.017 2.155 2.418-1.761c.293-.293.768-.293 1.06 0l2.117 2.227 1.95 2.252c.293.293.293.768 0 1.06l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.233 1.849-1.95 2.12c-.293.293-.767.293-1.06 0l-2.32-2.018-2.117 2.094c-.293.293-.768.293-1.061 0l-2.418-1.761-1.95 2.12c-.293.293-.767.293-1.06 0z" fill="currentColor" />
+                          </svg>
+                          TikTok
+                        </a>
           </div>
         </div>
       </section>
@@ -330,6 +323,19 @@ export default function Home() {
                 </a>
               )
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Sizin İçin Özel Üretilen Baskılar - Slayt */}
+      <section id="featured" className="section-pad border-top">
+        <div className="container">
+          <div className="flex flex-col md:flex-row md:items-center justify-between mb-8">
+            <h2 className="section-heading serif">Sizin İçin Özel Üretilen Baskılar</h2>
+            <p className="body-text text-accent whitespace-nowrap">İzmir'den özgün tasarımlarla, kaliteli filamentlerle, 2017'den beri deneyimimizle teslim ediyoruz</p>
+          </div>
+          <div className="max-w-4xl w-full mx-auto">
+            <SpecialCarousel />
           </div>
         </div>
       </section>
