@@ -183,14 +183,6 @@ function Nav() {
 }
 
 export default function Home() {
-  const [newsletterStatus, setNewsletterStatus] = useState<'idle' | 'sending' | 'ok'>('idle')
-
-  const handleNewsletter = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setNewsletterStatus('sending')
-    setTimeout(() => setNewsletterStatus('ok'), 800)
-  }
-
   return (
     <main className="min-h-screen">
       <Nav />
@@ -315,29 +307,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Newsletter */}
-      <section className="section-pad">
-        <div className="container">
-          <div className="newsletter">
-            <h2 className="section-heading serif mb-3">Newsletter</h2>
-            <p className="body-text">
-              Haftalık 3D baskı ilhamları, yeni ürünler ve özel teklifler için abone olun.
-            </p>
-            {newsletterStatus === 'ok' ? (
-              <div className="newsletter-success">Teşekkürler! Listeye eklendiniz.</div>
-            ) : (
-              <form onSubmit={handleNewsletter} className="newsletter-form" noValidate>
-                <input type="email" placeholder="E-posta adresiniz" required />
-                <button type="submit" className="btn-primary newsletter-btn" disabled={newsletterStatus === 'sending'}>
-                  {newsletterStatus === 'sending' ? 'Gönderiliyor…' : 'Abone Ol'}
-                </button>
-              </form>
-            )}
-          </div>
-        </div>
-      </section>
-
 
       {/* Footer */}
       <footer className="py-12 px-4 border-top">
