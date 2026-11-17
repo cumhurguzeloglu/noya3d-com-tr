@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 
+import './globals.css'
+
 export const metadata: Metadata = {
   title: 'NOYA3D — 3D Baskı, Tasarım ve Üretim',
   description: 'NOYA3D: 3D Baskı • Tasarım • Üretim. Figürler, Dekorlar, Eğlenceli baskılar, Özel Projeler & 3D Çözümler. İzmir.',
