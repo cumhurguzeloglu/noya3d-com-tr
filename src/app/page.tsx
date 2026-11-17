@@ -114,7 +114,7 @@ function Nav() {
               rel="noopener noreferrer"
               className="btn-primary flex items-center gap-2"
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                 <circle cx="9" cy="21" r="1"></circle>
                 <circle cx="20" cy="21" r="1"></circle>
                 <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
@@ -127,10 +127,10 @@ function Nav() {
               rel="noopener noreferrer"
               className="btn-secondary flex items-center gap-2"
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M16.5 7.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"></path>
               </svg>
               Instagram
             </a>
@@ -146,7 +146,7 @@ function Nav() {
               YouTube
             </a>
             <a
-              href="https://tiktok.com/@noya3d"
+              href="https://www.tiktok.com/@noya_3d"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary flex items-center gap-2"
@@ -196,7 +196,7 @@ function Nav() {
               YouTube’da Abone Ol
             </a>
             <a
-              href="https://tiktok.com/@noya3d"
+              href="https://www.tiktok.com/@noya_3d"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary w-full"
@@ -248,7 +248,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="btn-primary flex items-center gap-2"
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                 <circle cx="9" cy="21" r="1"></circle>
                 <circle cx="20" cy="21" r="1"></circle>
                 <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
@@ -261,10 +261,10 @@ export default function Home() {
               rel="noopener noreferrer"
               className="btn-secondary flex items-center gap-2"
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M16.5 7.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"></path>
               </svg>
               Instagram
             </a>
@@ -280,7 +280,7 @@ export default function Home() {
                           YouTube
                         </a>
                         <a
-                          href="https://tiktok.com/@noya3d"
+                          href="https://www.tiktok.com/@noya_3d"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="btn-secondary flex items-center gap-2"
