@@ -85,6 +85,21 @@ const posts = [
 
 const featured = posts[posts.length - 1]
 
+const slides = [
+  {
+    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_0969e897bcc9d73f867d45e56dd07837.jpeg',
+    title: 'ECU Master Black Connector Backshell Kit'
+  },
+  {
+    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_707eb35e305427921102ba675ed3ac47.jpeg',
+    title: 'Spark Ems Core-8 Connector Backsell Kit'
+  },
+  {
+    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_1b7b0b0b0d0279a9853337301fe8ca33.jpeg',
+    title: 'EMU Pro-8 Connector Backshell Kit'
+  }
+]
+
 function Nav() {
   const [open, setOpen] = useState(false)
 
@@ -282,19 +297,46 @@ export default function Home() {
       {/* Categories / content cards */}
       <section id="categories" className="section-pad border-top">
         <div className="container">
-          <div className="flex flex-col md:flex-row md:items-center justify-between mb-14 md:mb-18 gap-4">
-            <div>
-              <h2 className="section-heading mb-2">Tüm Kategoriler</h2>
-              <p className="body-text-sm">3D baskı dünyasından kesitler ve özel eserler</p>
-            </div>
-          </div>
           <div className="cards-grid">
             {categories.map((cat) => {
-              if (cat === 'Özel Tasarım') {
-                return null; // Already shown as carousel above
-              }
               const post = posts.find((p) => p.category === cat)
               if (!post) return null
+              if (cat === 'Özel Tasarım') {
+                return (
+                  <a
+                    key={cat}
+                    href="https://www.shopier.com/noya3d"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block hover:opacity-90 transition-opacity"
+                  >
+                    <article className="card">
+                      <div className="card-media carousel-wrap">
+                        <div className="carousel-track">
+                          {slides.map((s, i) => (
+                            <div key={i} className="carousel-slide">
+                              <Image
+                                src={s.image}
+                                alt={s.title}
+                                width={900}
+                                height={700}
+                                className="w-full h-full object-cover"
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
+                              />
+                              <div className="carousel-caption">{s.title}</div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      <div className="card-body">
+                        <span className="category-pill category-tag">{cat}</span>
+                        <h3 className="card-title">{post.title}</h3>
+                        <p className="card-excerpt">{post.excerpt}</p>
+                      </div>
+                    </article>
+                  </a>
+                )
+              }
               return (
                 <a
                   key={cat}
@@ -323,19 +365,6 @@ export default function Home() {
                 </a>
               )
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* Sizin İçin Özel Üretilen Baskılar - Slayt */}
-      <section id="featured" className="section-pad border-top">
-        <div className="container">
-          <div className="flex flex-col md:flex-row md:items-center justify-between mb-8">
-            <h2 className="section-heading serif">Sizin İçin Özel Üretilen Baskılar</h2>
-            <p className="body-text text-accent whitespace-nowrap">İzmir'den özgün tasarımlarla, kaliteli filamentlerle, 2017'den beri deneyimimizle teslim ediyoruz</p>
-          </div>
-          <div className="max-w-4xl w-full mx-auto">
-            <SpecialCarousel />
           </div>
         </div>
       </section>
