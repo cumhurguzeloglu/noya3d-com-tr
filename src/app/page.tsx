@@ -218,33 +218,56 @@ export default function Home() {
               href="https://www.shopier.com/noya3d"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary"
+              className="btn-primary flex items-center gap-2"
             >
-              Mağazamı Ziyaret Et
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+              Mağaza
             </a>
             <a
               href="https://instagram.com/noya_3d"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary"
+              className="btn-secondary flex items-center gap-2"
             >
-              Instagram’da Takip Et
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              Instagram
             </a>
             <a
               href="https://youtube.com/@noya_3d"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary"
+              className="btn-secondary flex items-center gap-2"
             >
-              YouTube’da Abone Ol
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+                <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.44 22.17 22.17 0 0 1 2.5-.39 3 3 0 0 1 2.88 0 22.08 22.08 0 0 1 1.52-.02 2 2 0 0 1 1.4 1.44 23 23 0 0 1-.03 2.4 2 2 0 0 1-1.4 1.44 3 3 0 0 1-2.88 0 22.08 22.08 0 0 1-1.52.02 2 2 0 0 1-1.4-1.44 23.47 23.47 0 0 1 .03-2.31 2 2 0 0 1 1.4-1.44z"></path>
+              </svg>
+              YouTube
             </a>
             <a
               href="https://tiktok.com/@noya3d"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary"
+              className="btn-secondary flex items-center gap-2"
             >
-              TikTok’da Takip Et
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+                <path d="M16 2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2"></path>
+                <path d="M8 22a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2"></path>
+                <path d="M12 16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2"></path>
+                <path d="M18 16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2"></path>
+                <path d="M6 8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2"></path>
+                <path d="M12 22a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2"></path>
+                <path d="M2 18a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2"></path>
+                <path d="M18 2a2 2 0 0 0-2 2h-4a2 2 0 0 0-2-2"></path>
+              </svg>
+              TikTok
             </a>
           </div>
         </div>
@@ -253,7 +276,10 @@ export default function Home() {
       {/* Sizin İçin Özel Üretilen Baskılar - Slayt */}
       <section id="featured" className="section-pad border-top">
         <div className="container">
-          <h2 className="section-heading serif mb-6 text-center">Sizin İçin Özel Üretilen Baskılar</h2>
+          <div className="flex flex-col md:flex-row md:items-center justify-between mb-8">
+            <h2 className="section-heading serif">Sizin İçin Özel Üretilen Baskılar</h2>
+            <p className="body-text text-accent whitespace-nowrap">İzmir'den teslim ediyoruz</p>
+          </div>
           <div className="max-w-4xl w-full mx-auto">
             <SpecialCarousel />
           </div>
