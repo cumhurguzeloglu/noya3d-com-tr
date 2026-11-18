@@ -25,7 +25,7 @@ const descriptionItems = [
   { icon: '🎨', text: 'Figürler • Dekorlar • Eğlenceli baskılar' },
   { icon: '💡', text: 'Özel Projeler & 3D Çözümler' },
   { icon: '✨', text: '3D baskı dünyasından kesitler' },
-  { icon: '📍', text: 'İZMİR', highlight: true }
+  
 ]
 
 const posts = [
@@ -231,7 +231,7 @@ export default function Home() {
               alt="NOYA3D Logo"
               width={108}
               height={108}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
               priority
             />
           </div>
@@ -337,7 +337,7 @@ export default function Home() {
                                 alt={s.title}
                                 width={900}
                                 height={700}
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-contain"
                                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
                               />
                               <div className="carousel-caption">{s.title}</div>
@@ -369,7 +369,7 @@ export default function Home() {
                         alt={post.title}
                         width={900}
                         height={700}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
                       />
                     </div>
@@ -435,7 +435,7 @@ function SpecialCarousel() {
                 alt={s.title}
                 width={900}
                 height={700}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
               <div className="carousel-caption">{s.title}</div>
             </div>
