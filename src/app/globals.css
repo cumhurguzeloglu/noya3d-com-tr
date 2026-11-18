@@ -138,17 +138,11 @@ a {
 }
 
 .desktop-links {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
   width: 100%;
-}
-
-@media (min-width: 768px) {
-  .desktop-links {
-    display: flex;
-  }
 }
 
 .desktop-links a {
@@ -559,10 +553,11 @@ a {
 
 .carousel-slide img {
   width: 100%;
-  height: auto;
-  max-height: 240px;
-  object-fit: cover;
+  height: 360px;
+  object-fit: contain !important;
+  object-position: center;
   display: block;
+  padding: 16px;
   margin-bottom: 8px;
 }
 
