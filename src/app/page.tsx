@@ -33,57 +33,65 @@ const posts = [
     id: 'boyama-figurleri',
     category: 'Boyama Figürleri',
     title: 'El Boyalı 3D Baskı Figürleri',
-    excerpt: 'Amaçlar, fırçalar ve tek katmanlık tekniklerle figürlerinize canlılık kazandıran el boyama serileri.',
-    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_9da6dae374d73dddc30413382c254be7.jpg'
+    excerpt: 'Amaçlar, fırçalar ve tek katmanlık tekniklerle figürlerinize canlılık kazandiran el boyama serileri.',
+    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_9da6dae374d73dddc30413382c254be7.jpg',
+    shopierUrl: 'https://www.shopier.com/s/product/el-boyali-3d-baski-figurleri-9da6dae374d73dddc30413382c254be7'
   },
   {
     id: 'dekorasyon',
     category: 'Dekorasyon',
     title: 'Karakterli Mekanlar İçin Dekorasyon',
     excerpt: 'Masaüstü ve raf düzeninize karakter katan 3D baskı dekorasyon parçaları.',
-    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_3947a9a7212284fb5b8c461d6ba2cecd.jpeg'
+    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_3947a9a7212284fb5b8c461d6ba2cecd.jpeg',
+    shopierUrl: 'https://www.shopier.com/s/product/karakterli-mekanlar-icin-dekorasyon-3947a9a7212284fb5b8c461d6ba2cecd'
   },
   {
     id: 'destek',
     category: 'Destek 🙏🏻',
     title: 'Projeye Destek Olun',
     excerpt: 'Atölyeyi yaşatmak ve yeni 3D baskı projelerini gerçekleştirmek için destek bekliyoruz.',
-    image: instagramLogo
+    image: instagramLogo,
+    shopierUrl: 'https://www.shopier.com/noya3d'
   },
   {
     id: 'automotive',
     category: 'Automotive',
     title: 'Oto & Motor Tasarım Parçaları',
     excerpt: 'Araçlar için spesifik prototipler, kapaklar ve içerişim parçaları.',
-    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_0969e897bcc9d73f867d45e56dd07837.jpeg'
+    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_0969e897bcc9d73f867d45e56dd07837.jpeg',
+    shopierUrl: 'https://www.shopier.com/s/product/oto-motor-tasarim-parcalari-0969e897bcc9d73f867d45e56dd07837'
   },
   {
     id: 'aydinlatma',
     category: 'Aydınlatma',
     title: '3D Baskı Lambalar ve Işık',
     excerpt: 'Difüzör, gölge ve ışık yaratan masa lambaları ile aydınlatma nesneleri.',
-    image: instagramLogo
+    image: instagramLogo,
+    shopierUrl: 'https://www.shopier.com/noya3d'
   },
   {
     id: 'cizgi-karakteri',
     category: 'Çizgi Karakteri',
     title: 'Seçkin Çizgi Karakteri Koleksiyonu',
     excerpt: 'Animasyon ve çizgi roman dünyasından inspirayona dayalı figürler.',
-    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_38a254de6e3dc9ee79fe7b7751b20446.jpeg'
+    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_38a254de6e3dc9ee79fe7b7751b20446.jpeg',
+    shopierUrl: 'https://www.shopier.com/s/product/secigin-cizgi-karakteri-koleksiyonu-38a254de6e3dc9ee79fe7b7751b20446'
   },
   {
     id: 'halloween',
     category: 'Halloween',
     title: 'Korkunç Eğlenceli Halloween Tasarımları',
     excerpt: 'Temalı dekorasyon ve figürlerle korkunç eğlenceli anlar.',
-    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_d7079035d0d4ecd6fb0e0d447b11d969.jpeg'
+    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_d7079035d0d4ecd6fb0e0d447b11d969.jpeg',
+    shopierUrl: 'https://www.shopier.com/s/product/korkunc-eglenceli-halloween-tasarimlari-d7079035d0d4ecd6fb0e0d447b11d969'
   },
   {
     id: 'ozel-tasarim',
     category: 'Özel Tasarım',
     title: 'Sizin İçin Özel Üretilen Baskılar',
     excerpt: 'Fikrinizi 3D model haline getirip, İzmir’den size teslim ediyoruz.',
-    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_707eb35e305427921102ba675ed3ac47.jpeg'
+    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_707eb35e305427921102ba675ed3ac47.jpeg',
+    shopierUrl: 'https://www.shopier.com/s/product/sizin-icin-ozel-uretilen-baskilar-707eb35e305427921102ba675ed3ac47'
   }
 ]
 
@@ -92,15 +100,18 @@ const featured = posts[posts.length - 1]
 const slides = [
   {
     image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_0969e897bcc9d73f867d45e56dd07837.jpeg',
-    title: 'ECU Master Black Connector Backshell Kit'
+    title: 'ECU Master Black Connector Backshell Kit',
+    shopierUrl: 'https://www.shopier.com/s/product/ecu-master-black-connector-backshell-kit-0969e897bcc9d73f867d45e56dd07837'
   },
   {
     image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_707eb35e305427921102ba675ed3ac47.jpeg',
-    title: 'Spark Ems Core-8 Connector Backsell Kit'
+    title: 'Spark Ems Core-8 Connector Backsell Kit',
+    shopierUrl: 'https://www.shopier.com/s/product/spark-ems-core-8-connector-backsell-kit-707eb35e305427921102ba675ed3ac47'
   },
   {
     image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_1b7b0b0b0d0279a9853337301fe8ca33.jpeg',
-    title: 'EMU Pro-8 Connector Backshell Kit'
+    title: 'EMU Pro-8 Connector Backshell Kit',
+    shopierUrl: 'https://www.shopier.com/s/product/emu-pro-8-connector-backshell-kit-1b7b0b0b0d0279a9853337301fe8ca33'
   }
 ]
 
@@ -206,30 +217,31 @@ export default function Home() {
               const post = posts.find((p) => p.category === cat)
               if (!post) return null
               if (cat === 'Özel Tasarım') {
-                return (
-                  <a
-                    key={cat}
-                    href="https://www.shopier.com/noya3d"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block hover:opacity-90 transition-opacity"
-                  >
+                              return (
+                                <a
+                                  key={cat}
+                                  href={post.shopierUrl}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="block hover:opacity-90 transition-opacity"
+                                >
                     <article className="card">
                       <div className="card-media carousel-wrap">
                         <div className="carousel-track">
                           {slides.map((s, i) => (
-                            <div key={i} className="carousel-slide">
-                              <Image
-                                src={s.image}
-                                alt={s.title}
-                                width={900}
-                                height={700}
-                                className="w-full h-full object-contain"
-                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
-                              />
-                              
-                            </div>
-                          ))}
+                                                      <a key={i} href={s.shopierUrl} target="_blank" rel="noopener noreferrer" className="block">
+                                                        <div className="carousel-slide">
+                                                          <Image
+                                                            src={s.image}
+                                                            alt={s.title}
+                                                            width={900}
+                                                            height={700}
+                                                            className="w-full h-full object-contain"
+                                                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
+                                                          />
+                                                        </div>
+                                                      </a>
+                                                    ))}
                         </div>
                       </div>
                       <div className="card-body">
@@ -242,13 +254,13 @@ export default function Home() {
                 )
               }
               return (
-                <a
-                  key={cat}
-                  href="https://www.shopier.com/noya3d"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block hover:opacity-90 transition-opacity"
-                >
+                              <a
+                                key={cat}
+                                href={post.shopierUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block hover:opacity-90 transition-opacity"
+                              >
                   <article className="card">
                     <div className="card-media">
                       <Image
