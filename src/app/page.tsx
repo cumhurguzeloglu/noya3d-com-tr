@@ -200,17 +200,6 @@ export default function Home() {
 
         </div>
       </section>
-
-        {/* Stripe Checkout */}
-        <section className="section-pad border-top">
-        <div className="container">
-          <div className="max-w-sm mx-auto">
-            <Elements stripe={stripePromise}>
-              <SpecialCheckout />
-            </Elements>
-          </div>
-        </div>
-        </section>
       <section id="categories" className="section-pad border-top">
         <div className="container">
           <div className="cards-grid">
