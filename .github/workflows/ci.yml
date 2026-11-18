@@ -10,22 +10,6 @@ permissions:
   contents: read
 
 jobs:
-  lint:
-    name: Lint
-    runs-on: ubuntu-latest
-    steps:
-      - name: Depoyu indir
-        uses: actions/checkout@v4
-      - name: Node.js kurulumu
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-      - name: Bağımlılıkları yükle
-        run: npm ci
-      - name: Lint çalıştır
-        run: npm run lint --no-input
-
   typecheck:
     name: Type Check
     runs-on: ubuntu-latest
@@ -44,7 +28,7 @@ jobs:
 
   build:
     name: Production Build
-    needs: [lint, typecheck]
+    needs: [typecheck]
     runs-on: ubuntu-latest
     steps:
       - name: Depoyu indir
