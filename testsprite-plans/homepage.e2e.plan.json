@@ -1,0 +1,19 @@
+{
+  "name": "NOYA3D Ana Sayfa E2E",
+  "description": "Ana sayfa hata olmadan yüklenmeli: logo, hero başlığı, CTA butonları ve kategori kartları görünür olmalı.",
+  "project_id": "<TESTSPRITE_PROJECT_ID>",
+  "environment": "production",
+  "priority": "critical",
+  "category": "e2e",
+  "steps": [
+    "https://noya3d.com.tr adresine git",
+    "Sayfa başlığının 'NOYA3D' içerdiğini doğrula",
+    "Hero bölümünde '3D Baskı • Tasarım • Üretim' metninin görünür olduğunu doğrula",
+    "Mağaza CTA butonunun https://www.shopier.com/noya3d hedefli olduğunu doğrula",
+    "Kategori kartlarının (7 adet) sayfada yüklendiğini doğrula",
+    "Her kategori kartında Shopier bağlantısı olduğunu doğrula",
+    "Footer'de copyright metninin bulunduğunu doğrula"
+  ],
+  "expected_result": "Ana sayfa 200 ile yüklenir; kritik elementler görünür, bağlantılar doğru hedefe işaret eder, JavaScript konsolunda ciddi hata yok.",
+  "notes": "TestSprite E2E plan şablonu (düz metin adımları). Çalıştırma komutu Resmi TestSprite dokümanda doğrulanacak."
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Stripe Test Ödeme Akışı E2E",
+  "description": "Stripe Checkout formu test modunda görünür ve geçerli test kartı ile ödeme başarılı oldukça /success sayfasına yönlendirilir.",
+  "project_id": "<TESTSPRITE_PROJECT_ID>",
+  "environment": "production",
+  "priority": "high",
+  "category": "e2e",
+  "steps": [
+    "https://noya3d.com.tr adresine git",
+    "Satın Alın bölümündeki Stripe ödeme formunun yüklendiğini doğrula",
+    "Kart numarası alanına Stripe test kartı gir (örn. 4242 4242 4242 4242)",
+    "Ödeme butonuna tıkla",
+    "Ödeme başarılı olduğunda tarayıcının https://noya3d.com.tr/success adresine yönlendirildiğini doğrula",
+    "Gerçek para ödemesi yapılmadığını (Stripe test modu) doğrula"
+  ],
+  "expected_result": "Stripe formu test modunda çalışır; başarılı ödeme sonrası /success sayfası açılır; gerçek ücret kesilmez.",
+  "notes": "Stripe test anahtarları (TESTSPRITE ortamı) gereklidir. Gerçek kart veya gerçek para kullanılmaz. Çalıştırma komutu Resmi TestSprite dokümanda doğrulanacak."
+}

@@ -1,0 +1,26 @@
+# TestSprite yapılandırması — NOYA3D (noya3d.com.tr)
+#
+# NOT: Bu dosya bir ŞABLONdur. Aşağıdaki alan isimleri, komut ve bayrak değerleri
+# çalıştırılmadan önce Resmi TestSprite CLI dokümanında doğrulanmalıdır
+# ("Resmi dokümanda doğrula"). TestSprite komutları bu dosyada uydurulmamıştır.
+
+project:
+  id: '<TESTSPRITE_PROJECT_ID>'   # TestSprite dashboard'dan alınacak örnek kimlik
+  name: 'noya3d-com-tr'
+
+auth:
+  key_env: 'TESTSPRITE_API_KEY'      # Gerçek anahtar ASLA buraya yazılmaz; sadece GitHub Secret
+  api_url_env: 'TESTSPRITE_API_URL'  # Varsayılan: https://api.testsprite.com
+
+environments:
+  production:
+    name: 'production'
+    target_url: 'https://noya3d.com.tr'
+    sign_in: 'none'
+
+ci:
+  workflow: '.github/workflows/testsprite.yml'   # İsteğe bağlı bir TestSprite CI gidişi
+  summary_file: 'testsprite-summary.json'
+  fail_on_skipped: true
+
+plans_directory: 'testsprite-plans'

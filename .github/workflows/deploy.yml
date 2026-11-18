@@ -1,0 +1,32 @@
+name: Deploy Production (Vercel)
+
+on:
+  push:
+    branches: ['master']
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Deploy to Vercel Production
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu indir
+        uses: actions/checkout@v4
+      - name: Node.js kurulumu
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - name: Bağımlılıkları yükle
+        run: npm ci
+      - name: Üretim derlemesi
+        run: npm run build
+      - name: Vercel production dağıtımı
+        run: npx vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      - name: Production smoke testi
+        run: curl -fsS https://noya3d.com.tr | head -n 5
