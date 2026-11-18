@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://noya3d.com.tr/sitemap.xml
