@@ -647,3 +647,14 @@ a {
     scroll-behavior: auto !important;
   }
 }
+
+.desktop-only {
+  display: inline;
+  margin-left: 6px;
+}
+
+@media (max-width: 767px) {
+  .desktop-only {
+    display: none;
+  }
+}
