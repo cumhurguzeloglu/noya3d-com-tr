@@ -13,12 +13,9 @@ const instagramLogo =
 const categories = [
   'Boyama Figürleri',
   'Dekorasyon',
-  'Destek 🙏🏻',
   'Automotive',
-  'Aydınlatma',
   'Çizgi Karakteri',
-  'Halloween',
-  'Özel Tasarım'
+  'Halloween'
 ]
 
 const descriptionItems = [
