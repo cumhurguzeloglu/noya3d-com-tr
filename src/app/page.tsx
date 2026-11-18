@@ -35,7 +35,7 @@ const posts = [
     title: 'El Boyalı 3D Baskı Figürleri',
     excerpt: 'Amaçlar, fırçalar ve tek katmanlık tekniklerle figürlerinize canlılık kazandiran el boyama serileri.',
     image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_9da6dae374d73dddc30413382c254be7.jpg',
-    shopierUrl: 'https://www.shopier.com/s/product/el-boyali-3d-baski-figurleri-9da6dae374d73dddc30413382c254be7'
+    shopierUrl: 'https://www.shopier.com/noya3d/52446986'
   },
   {
     id: 'dekorasyon',
@@ -43,7 +43,7 @@ const posts = [
     title: 'Karakterli Mekanlar İçin Dekorasyon',
     excerpt: 'Masaüstü ve raf düzeninize karakter katan 3D baskı dekorasyon parçaları.',
     image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_3947a9a7212284fb5b8c461d6ba2cecd.jpeg',
-    shopierUrl: 'https://www.shopier.com/s/product/karakterli-mekanlar-icin-dekorasyon-3947a9a7212284fb5b8c461d6ba2cecd'
+    shopierUrl: 'https://www.shopier.com/noya3d/51977924'
   },
   {
     id: 'destek',
@@ -59,7 +59,7 @@ const posts = [
     title: 'Oto & Motor Tasarım Parçaları',
     excerpt: 'Araçlar için spesifik prototipler, kapaklar ve içerişim parçaları.',
     image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_0969e897bcc9d73f867d45e56dd07837.jpeg',
-    shopierUrl: 'https://www.shopier.com/s/product/oto-motor-tasarim-parcalari-0969e897bcc9d73f867d45e56dd07837'
+    shopierUrl: 'https://www.shopier.com/noya3d/52457673'
   },
   {
     id: 'aydinlatma',
@@ -75,7 +75,7 @@ const posts = [
     title: 'Seçkin Çizgi Karakteri Koleksiyonu',
     excerpt: 'Animasyon ve çizgi roman dünyasından inspirayona dayalı figürler.',
     image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_38a254de6e3dc9ee79fe7b7751b20446.jpeg',
-    shopierUrl: 'https://www.shopier.com/s/product/secigin-cizgi-karakteri-koleksiyonu-38a254de6e3dc9ee79fe7b7751b20446'
+    shopierUrl: 'https://www.shopier.com/noya3d/51796776'
   },
   {
     id: 'halloween',
@@ -83,7 +83,7 @@ const posts = [
     title: 'Korkunç Eğlenceli Halloween Tasarımları',
     excerpt: 'Temalı dekorasyon ve figürlerle korkunç eğlenceli anlar.',
     image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_d7079035d0d4ecd6fb0e0d447b11d969.jpeg',
-    shopierUrl: 'https://www.shopier.com/s/product/korkunc-eglenceli-halloween-tasarimlari-d7079035d0d4ecd6fb0e0d447b11d969'
+    shopierUrl: 'https://www.shopier.com/noya3d/51983389'
   },
   {
     id: 'ozel-tasarim',
@@ -91,7 +91,7 @@ const posts = [
     title: 'Sizin İçin Özel Üretilen Baskılar',
     excerpt: 'Fikrinizi 3D model haline getirip, İzmir’den size teslim ediyoruz.',
     image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_707eb35e305427921102ba675ed3ac47.jpeg',
-    shopierUrl: 'https://www.shopier.com/s/product/sizin-icin-ozel-uretilen-baskilar-707eb35e305427921102ba675ed3ac47'
+    shopierUrl: 'https://www.shopier.com/noya3d/52457563'
   }
 ]
 
@@ -101,17 +101,17 @@ const slides = [
   {
     image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_0969e897bcc9d73f867d45e56dd07837.jpeg',
     title: 'ECU Master Black Connector Backshell Kit',
-    shopierUrl: 'https://www.shopier.com/s/product/ecu-master-black-connector-backshell-kit-0969e897bcc9d73f867d45e56dd07837'
+    shopierUrl: 'https://www.shopier.com/noya3d/52457673'
   },
   {
     image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_707eb35e305427921102ba675ed3ac47.jpeg',
     title: 'Spark Ems Core-8 Connector Backsell Kit',
-    shopierUrl: 'https://www.shopier.com/s/product/spark-ems-core-8-connector-backsell-kit-707eb35e305427921102ba675ed3ac47'
+    shopierUrl: 'https://www.shopier.com/noya3d/52457563'
   },
   {
     image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_1b7b0b0b0d0279a9853337301fe8ca33.jpeg',
     title: 'EMU Pro-8 Connector Backshell Kit',
-    shopierUrl: 'https://www.shopier.com/s/product/emu-pro-8-connector-backshell-kit-1b7b0b0b0d0279a9853337301fe8ca33'
+    shopierUrl: 'https://www.shopier.com/noya3d/52456131'
   }
 ]
 
