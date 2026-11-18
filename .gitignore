@@ -33,3 +33,6 @@ testsprite-results/
 # Diğer
 *.pem
 debug/
+
+# Next.js build cache
+tsconfig.tsbuildinfo
