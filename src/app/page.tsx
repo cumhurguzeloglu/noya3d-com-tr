@@ -340,6 +340,7 @@ export default function Home() {
                                 className="w-full h-full object-contain"
                                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
                               />
+                              
                             </div>
                           ))}
                         </div>
@@ -436,6 +437,7 @@ function SpecialCarousel() {
                 height={700}
                 className="w-full h-full object-contain"
               />
+              
             </div>
           ))}
         </div>
