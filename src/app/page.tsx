@@ -2,6 +2,10 @@
 
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
+import { Elements, CardElement, useStripe, useElements } from '@stripe/react-stripe-js'
+import { loadStripe } from '@stripe/stripe-js'
+
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY as string)
 
 const instagramLogo =
   'https://scontent.cdninstagram.com/v/t51.82787-19/629690042_17847503964679349_5284510444223812348_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=109&ig_cache_key=GLpOiCW1LPHVNWg-APxSzR9AWlZJbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW...zIn0%3D&_nc_ohc=MbKX2nqbmakQ7kNvwEhrbjH&_nc_oc=AdpdQaMEwyYbXJ6d1gnOKfyLUnL9A2NpoiLb02RAFu7GmQ7BPigwBRa7bSD8d33Eig0&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=7CnVz6pCQanIDZh-LrIsxA&_nc_ss=7f689&_nc_ct=RQosPBUCFQIAAAA&oh=00_AQSTmBnzcXw_RSX0mLJYX3efQVdgi0rcra_oolrZtb7Imw&oe=6B0255FB'
@@ -292,9 +296,22 @@ export default function Home() {
                         </a>
           </div>
         </div>
-      </section>
+        </section>
 
-      {/* Categories / content cards */}
+        {/* Stripe Checkout */}
+        <section className="section-pad border-top">
+        <div className="container">
+          <h2 className="section-heading serif mb-6 text-center">Satın Alın</h2>
+          <p className="body-text text-center mb-10">
+            3D baskı ürünlerinizi güvenli olarak satın alın. Stripe ile güvenli ödeme.
+          </p>
+          <div className="max-w-sm mx-auto">
+            <Elements stripe={stripePromise}>
+              <SpecialCheckout />
+            </Elements>
+          </div>
+        </div>
+        </section>
       <section id="categories" className="section-pad border-top">
         <div className="container">
           <div className="cards-grid">
@@ -454,5 +471,64 @@ function SpecialCarousel() {
         </div>
       </div>
     </article>
+  )
+}
+
+function SpecialCheckout() {
+  const [paymentIntent, setPaymentIntent] = useState<string | null>(null)
+  const [paymentStatus, setPaymentStatus] = useState<string | null>('')
+
+  const stripe = useStripe()
+  const elements = useElements()
+
+  if (!stripe || !elements) {
+    return <div>Stripe yükleniyor...</div>
+  }
+
+  const handleSubmit = async (event: any) => {
+    event.preventDefault()
+
+    const result = await stripe.confirmPayment({
+      elements,
+      confirmParams: {
+        return_url: 'https://noya3d.com.tr/success',
+      },
+    }) as any
+
+    if (result.error) {
+      setPaymentStatus(`Hata: ${result.error.message}`)
+    } else if (result.paymentIntent?.status === 'succeeded') {
+      setPaymentStatus('Ödeme başarıyla tamamlandı!')
+      setPaymentIntent(result.paymentIntent.id)
+    }
+  }
+
+  return (
+    <div className="bg-white/10 p-6 rounded-lg border border-gray-700/30">
+      <h3 className="text-lg font-bold mb-4 text-white">Kredi Kartı ile Öde</h3>
+      <Elements stripe={stripe}>
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div className="space-y-2">
+            <label className="text-sm font-medium text-gray-200">Kart Numarası</label>
+            <CardElement />
+          </div>
+          <button
+            type="submit"
+            disabled={!stripe}
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-medium transition-colors"
+          >
+            {stripe ? 'Öde' : 'Yükleniyor...'}
+          </button>
+          {paymentStatus && (
+            <p className={`mt-2 text-sm ${paymentStatus.includes('başarıyla') ? 'text-green-400' : 'text-red-400'}`}>
+              {paymentStatus}
+            </p>
+          )}
+          {paymentIntent && (
+            <p className="text-sm text-green-400">Ödeme ID: {paymentIntent}</p>
+          )}
+        </form>
+      </Elements>
+    </div>
   )
 }

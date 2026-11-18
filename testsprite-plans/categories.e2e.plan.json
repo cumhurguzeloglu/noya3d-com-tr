@@ -1,0 +1,18 @@
+{
+  "name": "Kategori Kartları ve Slayt E2E",
+  "description": "Kategori kartları tıklanabilir olmalı; özel tasarım slaytları otomatik geçişli olmalı ve görseller kırpılmamalı (object-contain).",
+  "project_id": "<TESTSPRITE_PROJECT_ID>",
+  "environment": "production",
+  "priority": "high",
+  "category": "e2e",
+  "steps": [
+    "https://noya3d.com.tr adresine git",
+    "Kategoriler bölümüne kadar sayfayı aşağı kaydır",
+    "7 kategori kartının (Boyama Figürleri, Dekorasyon, Destek, Automotive, Aydınlatma, Çizgi Karakteri, Halloween, Özel Tasarım) görünür olduğunu doğrula",
+    "Her kartta görselin 'object-contain' ile göründüğünü (kırpılmamış) doğrula",
+    "Özel Tasarım kartındaki slaytın otomatik geçiş yaptığına (4 sn) doğrula",
+    "Herhangi bir kategoriye tıklandığında shopier.com/noya3d'ye yönlendirildiğini doğrula"
+  ],
+  "expected_result": "Tüm kategori kartları ve slaytlar beklenildiği gibi çalışır; görsel kırpılması yoktur.",
+  "notes": "TestSprite E2E plan şablonu. Çalıştırma komutu Resmi TestSprite dokümanda doğrulanacak."
+}

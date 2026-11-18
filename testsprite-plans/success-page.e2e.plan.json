@@ -1,0 +1,16 @@
+{
+  "name": "/success Sayfası E2E",
+  "description": "/success rotası erişilebilir olmalı ve ödeme başarısı mesajını içermelidir.",
+  "project_id": "<TESTSPRITE_PROJECT_ID>",
+  "environment": "production",
+  "priority": "medium",
+  "category": "e2e",
+  "steps": [
+    "https://noya3d.com.tr/success adresine git",
+    "Sayfa 200 durum kodu ile yanıt veriyor olmalı",
+    "Ödeme başarısı veya 'siparişiniz alındı' türü bir mesajın görünür olduğunu doğrula",
+    "Ana sayfaya dönüş bağlantısının çalıştığını doğrula"
+  ],
+  "expected_result": "/success rotası 200 döner ve kullanıcıya başarılı ödeme onayı gösterilir.",
+  "notes": "/success rotası henüz yok (yol haritası maddesi). Test bu rota eklendikten sonra geçerli olacaktır. Çalıştırma komutu Resmi TestSprite dokümanda doğrulanacak."
+}
