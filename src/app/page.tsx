@@ -189,7 +189,7 @@ export default function Home() {
           </div>
 
 
-          <p className="section-heading font-medium mb-8 md:mb-14">
+          <p className="hero-title font-medium mb-8 md:mb-14">
             3D Baskı • Tasarım • Üretim
           </p>
 

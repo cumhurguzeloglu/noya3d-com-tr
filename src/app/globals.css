@@ -658,3 +658,16 @@ a {
     display: none;
   }
 }
+
+
+@font-face {
+  font-family: 'Penny Lane Corroded';
+  src: url('/fonts/PennyLaneCorroded.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero-title {
+  font-family: 'Penny Lane Corroded', cursive;
+  font-weight: 400;
+}
