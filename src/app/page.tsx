@@ -204,10 +204,6 @@ export default function Home() {
         {/* Stripe Checkout */}
         <section className="section-pad border-top">
         <div className="container">
-          <h2 className="section-heading serif mb-6 text-center">Satın Alın</h2>
-          <p className="body-text text-center mb-10">
-            3D baskı ürünlerinizi güvenli olarak satın alın. Stripe ile güvenli ödeme.
-          </p>
           <div className="max-w-sm mx-auto">
             <Elements stripe={stripePromise}>
               <SpecialCheckout />
