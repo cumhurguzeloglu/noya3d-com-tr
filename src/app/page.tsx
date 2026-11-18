@@ -202,74 +202,33 @@ export default function Home() {
       <section id="categories" className="section-pad border-top">
         <div className="container">
           <div className="cards-grid">
-            {categories.map((cat) => {
-              const post = posts.find((p) => p.category === cat)
-              if (!post) return null
-              if (cat === 'Özel Tasarım') {
-                              return (
-                                <a
-                                  key={cat}
-                                  href={post.shopierUrl}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="block hover:opacity-90 transition-opacity"
-                                >
-                    <article className="card">
-                      <div className="card-media carousel-wrap">
-                        <div className="carousel-track">
-                          {slides.map((s, i) => (
-                                                      <a key={i} href={s.shopierUrl} target="_blank" rel="noopener noreferrer" className="block">
-                                                        <div className="carousel-slide">
-                                                          <Image
-                                                            src={s.image}
-                                                            alt={s.title}
-                                                            width={900}
-                                                            height={700}
-                                                            className="w-full h-full object-contain"
-                                                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
-                                                          />
-                                                        </div>
-                                                      </a>
-                                                    ))}
-                        </div>
-                      </div>
-                      <div className="card-body">
-                        <span className="category-pill category-tag">{cat}</span>
-                        <h3 className="card-title">{post.title}</h3>
-                        <p className="card-excerpt">{post.excerpt}</p>
-                      </div>
-                    </article>
-                  </a>
-                )
-              }
-              return (
-                              <a
-                                key={cat}
-                                href={post.shopierUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="block hover:opacity-90 transition-opacity"
-                              >
-                  <article className="card">
-                    <div className="card-media">
-                      <Image
-                        src={post.image}
-                        alt={post.title}
-                        width={900}
-                        height={700}
-                        className="w-full h-full object-contain"
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
-                      />
-                    </div>
-                    <div className="card-body">
-                      <span className="category-pill category-tag">{cat}</span>
-                      <h3 className="card-title">{post.title}</h3>
-                      <p className="card-excerpt">{post.excerpt}</p>
-                    </div>
-                  </article>
-                </a>
-              )
-            })}
+            {posts.map((post) => (
+                          <a
+                            key={post.id}
+                            href={post.shopierUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block hover:opacity-90 transition-opacity"
+                          >
+                            <article className="card">
+                              <div className="card-media">
+                                <Image
+                                  src={post.image}
+                                  alt={post.title}
+                                  width={900}
+                                  height={700}
+                                  className="w-full h-full object-contain"
+                                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
+                                />
+                              </div>
+                              <div className="card-body">
+                                <span className="category-pill category-tag">{post.category}</span>
+                                <h3 className="card-title">{post.title}</h3>
+                                <p className="card-excerpt">{post.excerpt}</p>
+                              </div>
+                            </article>
+                          </a>
+                        ))}
           </div>
         </div>
       </section>
