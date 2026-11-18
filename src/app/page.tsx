@@ -59,20 +59,12 @@ const posts = [
     shopierUrl: 'https://www.shopier.com/noya3d/51796776'
   },
   {
-    id: 'halloween',
+    id: 'halloween-kuru',
     category: 'Halloween',
     title: 'Kuru Kafa - Renk Geçişli',
     excerpt: 'Halloween için özel tasarlanmış, renk geçişli kuru kafa tasarımı.',
     image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_d7079035d0d4ecd6fb0e0d447b11d969.jpeg',
     shopierUrl: 'https://www.shopier.com/noya3d/51983389'
-  },
-  {
-    id: 'automotive-ecu',
-    category: 'Automotive',
-    title: 'ECU Master Black Connector Backshell Kit',
-    excerpt: 'ECU Master Black konektör için backshell kiti, profesyonel otomotiv uygulamalar için.',
-    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_0969e897bcc9d73f867d45e56dd07837.jpeg',
-    shopierUrl: 'https://www.shopier.com/noya3d/52457673'
   },
   {
     id: 'automotive-spark',
@@ -89,38 +81,6 @@ const posts = [
     excerpt: 'EMU Pro-8 konektör için backshell kiti, profesyonel otomotiv uygulamalar için.',
     image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_1b7b0b0b0d0279a9853337301fe8ca33.jpeg',
     shopierUrl: 'https://www.shopier.com/noya3d/52456131'
-  },
-  {
-    id: 'halloween',
-    category: 'Halloween',
-    title: 'Kuru Kafa - Renk Geçişli',
-    excerpt: 'Halloween için özel tasarlanmış, renk geçişli kuru kafa tasarımı.',
-    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_d7079035d0d4ecd6fb0e0d447b11d969.jpeg',
-    shopierUrl: 'https://www.shopier.com/noya3d/51983389'
-  },
-  {
-    id: 'dekorasyon',
-    category: 'Dekorasyon',
-    title: 'PS5 Kontrolcü Askısı',
-    excerpt: 'PS5 kontrolcünüzü şık ve düzenli bir şekilde saklamak için tasarlanmış askı.',
-    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_3947a9a7212284fb5b8c461d6ba2cecd.jpeg',
-    shopierUrl: 'https://www.shopier.com/noya3d/51977924'
-  },
-  {
-    id: 'cizgi-karakteri',
-    category: 'Çizgi Karakteri',
-    title: 'Peter Griffin - Family Guy',
-    excerpt: 'Family Guy\'dan Peter Griffin karakteri, hayranlar için koleksiyonluk figür.',
-    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_38a254de6e3dc9ee79fe7b7751b20446.jpeg',
-    shopierUrl: 'https://www.shopier.com/noya3d/51796776'
-  },
-  {
-    id: 'halloween-kuru',
-    category: 'Halloween',
-    title: 'Kuru Kafa - Renk Geçişli',
-    excerpt: 'Halloween için özel tasarlanmış, renk geçişli kuru kafa tasarımı.',
-    image: 'https://cdn.shopier.app/pictures_mid/NOYA3D_d7079035d0d4ecd6fb0e0d447b11d969.jpeg',
-    shopierUrl: 'https://www.shopier.com/noya3d/51983389'
   }
 ]
 
