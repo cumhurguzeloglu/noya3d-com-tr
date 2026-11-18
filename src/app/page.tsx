@@ -8,7 +8,6 @@ import { loadStripe } from '@stripe/stripe-js'
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY as string)
 
 const instagramLogo =
-  'data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"150\" height=\"150\" viewBox=\"0 0 150 150\"><rect width=\"150\" height=\"150\" rx=\"30\" fill=\"%23fbfaf7\"/><circle cx=\"75\" cy=\"75\" r=\"40\" fill=\"none\" stroke=\"%23b06b3e\" stroke-width=\"6\"/><circle cx=\"75\" cy=\"75\" r=\"8\" fill=\"%23b06b3e\"/></svg>'
   'https://scontent.cdninstagram.com/v/t51.82787-19/629690042_17847503964679349_5284510444223812348_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=109&ig_cache_key=GLpOiCW1LPHVNWg-APxSzR9AWlZJbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW...zIn0%3D&_nc_ohc=MbKX2nqbmakQ7kNvwEhrbjH&_nc_oc=AdpdQaMEwyYbXJ6d1gnOKfyLUnL9A2NpoiLb02RAFu7GmQ7BPigwBRa7bSD8d33Eig0&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=7CnVz6pCQanIDZh-LrIsxA&_nc_ss=7f689&_nc_ct=RQosPBUCFQIAAAA&oh=00_AQSTmBnzcXw_RSX0mLJYX3efQVdgi0rcra_oolrZtb7Imw&oe=6B0255FB'
 
 const categories = [
@@ -117,10 +116,10 @@ function Nav() {
               rel="noopener noreferrer"
               className="btn-primary flex items-center gap-2"
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" className="w-5 h-5">
-                <path d="M3 3h18v18H3z"></path>
-                <line x1="7" y1="7" x2="17" y2="7"></line>
-                <line x1="7" y1="13" x2="14" y2="13"></line>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                <path d="M3 3h18v18H3z" fill="none" stroke="currentColor" stroke-width="2"></path>
+                <line x1="7" y1="7" x2="17" y2="7" stroke="currentColor" stroke-width="2"></line>
+                <line x1="7" y1="13" x2="14" y2="13" stroke="currentColor" stroke-width="2"></line>
               </svg>
               <span className="desktop-only">Mağaza</span>
             </a>
@@ -130,9 +129,9 @@ function Nav() {
               rel="noopener noreferrer"
               className="btn-secondary flex items-center gap-2"
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" className="w-5 h-5">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <circle cx="12" cy="12" r="3"></circle>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"></rect>
+                <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"></circle>
               </svg>
               <span className="desktop-only">Instagram</span>
             </a>
@@ -142,10 +141,10 @@ function Nav() {
               rel="noopener noreferrer"
               className="btn-secondary flex items-center gap-2"
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" className="w-5 h-5">
-                <path d="M10 15.5L14.192 12l-4.192-3.5z"></path>
-                <path d="M10 8.5L14.192 12l-4.192 3.5z"></path>
-                <path d="M9 20c-5 0-9-4-9-9V5c0-5 4-9 9-9s9 4 9 9v6c0 5-4 9-9 9z"></path>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                <path d="M10 15.5L14.192 12l-4.192-3.5z" fill="currentColor"></path>
+                <path d="M10 8.5L14.192 12l-4.192 3.5z" fill="currentColor"></path>
+                <path d="M9 20c-5 0-9-4-9-9V5c0-5 4-9 9-9s9 4 9 9v6c0 5-4 9-9 9z" fill="none" stroke="currentColor" stroke-width="2"></path>
               </svg>
               <span className="desktop-only">YouTube</span>
             </a>
@@ -156,7 +155,7 @@ function Nav() {
               className="btn-secondary flex items-center gap-2"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                <path d="M12 2c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 14c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"></path>
+                <path d="M12 2c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 14c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z" fill="currentColor"></path>
                 <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"></circle>
               </svg>
               <span className="desktop-only">TikTok</span>
