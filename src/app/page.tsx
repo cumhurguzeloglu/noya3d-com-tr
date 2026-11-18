@@ -8,6 +8,7 @@ import { loadStripe } from '@stripe/stripe-js'
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY as string)
 
 const instagramLogo =
+  'data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"150\" height=\"150\" viewBox=\"0 0 150 150\"><rect width=\"150\" height=\"150\" rx=\"30\" fill=\"%23fbfaf7\"/><circle cx=\"75\" cy=\"75\" r=\"40\" fill=\"none\" stroke=\"%23b06b3e\" stroke-width=\"6\"/><circle cx=\"75\" cy=\"75\" r=\"8\" fill=\"%23b06b3e\"/></svg>'
   'https://scontent.cdninstagram.com/v/t51.82787-19/629690042_17847503964679349_5284510444223812348_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=109&ig_cache_key=GLpOiCW1LPHVNWg-APxSzR9AWlZJbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW...zIn0%3D&_nc_ohc=MbKX2nqbmakQ7kNvwEhrbjH&_nc_oc=AdpdQaMEwyYbXJ6d1gnOKfyLUnL9A2NpoiLb02RAFu7GmQ7BPigwBRa7bSD8d33Eig0&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=7CnVz6pCQanIDZh-LrIsxA&_nc_ss=7f689&_nc_ct=RQosPBUCFQIAAAA&oh=00_AQSTmBnzcXw_RSX0mLJYX3efQVdgi0rcra_oolrZtb7Imw&oe=6B0255FB'
 
 const categories = [
@@ -105,61 +106,61 @@ const slides = [
 ]
 
 function Nav() {
-  const [open, setOpen] = useState(false)
-
   return (
     <nav className="navbar">
       <div className="max-w">
         <div className="navbar-inner">
           <div className="desktop-links">
             <a
-                          href="https://www.shopier.com/noya3d"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="btn-primary flex items-center gap-2"
-                        >
-                          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                            <circle cx="9" cy="21" r="1"></circle>
-                            <circle cx="20" cy="21" r="1"></circle>
-                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                          </svg>
-                          <span className="desktop-only">Mağaza</span>
-                        </a>
+              href="https://www.shopier.com/noya3d"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary flex items-center gap-2"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" className="w-5 h-5">
+                <path d="M3 3h18v18H3z"></path>
+                <line x1="7" y1="7" x2="17" y2="7"></line>
+                <line x1="7" y1="13" x2="14" y2="13"></line>
+              </svg>
+              <span className="desktop-only">Mağaza</span>
+            </a>
             <a
-                          href="https://instagram.com/noya_3d"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="btn-secondary flex items-center gap-2"
-                        >
-                          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <path d="M16.5 7.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"></path>
-                          </svg>
-                          <span className="desktop-only">Instagram</span>
-                        </a>
+              href="https://instagram.com/noya_3d"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary flex items-center gap-2"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" className="w-5 h-5">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <span className="desktop-only">Instagram</span>
+            </a>
             <a
-                          href="https://youtube.com/@noya_3d"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="btn-secondary flex items-center gap-2"
-                        >
-                          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                            <path d="M23.498 6.186a3.174 3.174 0 0 0-2.122-2.136C19.505 3.545 12 3.506 12 3.506s-7.505.039-9.497.55c-.92.166-1.646.53-2.122 2.136C.88 7.304 0 10.152 0 12s.88 4.701 2.122 2.136c.92.166 1.646.53 2.122 2.136C4.495 20.455 12 20.494 12 20.494s7.505-.039 9.497-.55c.92-.166 1.646-.53 2.122 2.136C23.12 16.699 24 13.848 24 12s-.88-4.701-2.122-2.136zM10 15.5V9l5 3.3-5 3.3z" fill="currentColor" />
-                          </svg>
-                          <span className="desktop-only">YouTube</span>
-                        </a>
+              href="https://youtube.com/@noya_3d"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary flex items-center gap-2"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" className="w-5 h-5">
+                <path d="M10 15.5L14.192 12l-4.192-3.5z"></path>
+                <path d="M10 8.5L14.192 12l-4.192 3.5z"></path>
+                <path d="M9 20c-5 0-9-4-9-9V5c0-5 4-9 9-9s9 4 9 9v6c0 5-4 9-9 9z"></path>
+              </svg>
+              <span className="desktop-only">YouTube</span>
+            </a>
             <a
-                          href="https://www.tiktok.com/@noya_3d"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="btn-secondary flex items-center gap-2"
-                        >
-                          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                            <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.521 17.34c-.24.359-.83.359-1.071 0l-2.379-1.886-2.177 2.155c-.293.293-.767.293-1.06 0l-2.017-2.155-2.418 1.761c-.293.293-.768.293-1.06 0L2.05 13.668c-.293-.293-.293-.768 0-1.06l2.117-2.227-1.95-2.252c-.293-.293-.293-.768 0-1.061l2.233-1.849 1.95-2.12c.293.293.768.293 1.06 0l2.32 2.018 2.117-2.094c.293.293.768.293 1.061 0l2.418 1.761 1.95-2.12c.293.293.767.293 1.06 0l2.379 1.886 2.177-2.155c.293.293.767.293 1.06 0l2.017 2.155 2.418-1.761c.293.293.768.293 1.06 0l2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061l-2.117 2.227 1.95 2.252c.293.293.293.768 0 1.061z" fill="currentColor" />
-                          </svg>
-                          <span className="desktop-only">TikTok</span>
-                        </a>
+              href="https://www.tiktok.com/@noya_3d"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary flex items-center gap-2"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                <path d="M12 2c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 14c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"></path>
+                <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"></circle>
+              </svg>
+              <span className="desktop-only">TikTok</span>
+            </a>
           </div>
         </div>
       </div>
