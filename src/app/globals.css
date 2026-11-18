@@ -670,4 +670,8 @@ a {
 .hero-title {
   font-family: 'Penny Lane Corroded', cursive;
   font-weight: 400;
+  font-size: clamp(26px, 4vw, 34px);
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  color: var(--color-text);
 }
