@@ -24,7 +24,7 @@ jobs:
       - name: Bağımlılıkları yükle
         run: npm ci
       - name: Lint çalıştır
-        run: npm run lint --if-present
+        run: npm run lint --no-input
 
   typecheck:
     name: Type Check
